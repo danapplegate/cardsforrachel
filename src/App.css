@@ -102,6 +102,7 @@
   color: white;
   font-size: 1.5rem;
   text-shadow: rgba(0, 0, 0, 0.5) 0.1rem 0.1rem 5px;
+  animation: swell 1s ease-in infinite;
 }
 
 .resistor-hole {
@@ -147,7 +148,22 @@
 }
 
 @keyframes pulse {
-  0% { transform: scale(1) rotate(-45deg); }
-  25% { transform: scale(1.05) rotate(-43deg); }
-  50% { transform: scale(1) rotate(-45deg); }
+  0% {
+    transform: scale(1) rotate(-45deg);
+    filter: drop-shadow(-0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2));
+  }
+  25% {
+    transform: scale(1.05) rotate(-43deg);
+    filter: drop-shadow(-0.4rem 0.4rem 0.3rem rgba(0, 0, 0, 0.2));
+  }
+  50% {
+    transform: scale(1) rotate(-45deg);
+    filter: drop-shadow(-0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2));
+  }
+}
+
+@keyframes swell {
+  0% { transform: scale(1) rotate(45deg); }
+  25% { transform: scale(1.1) rotate(45deg); }
+  55% { transform: scale(1) rotate(45deg); }
 }
