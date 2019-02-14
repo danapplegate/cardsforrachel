@@ -36,7 +36,7 @@ export default () => {
                 <div className="card card--valentines">
                     <h1 className={`card-title${pulsing ? ' card-title--pulsing' : ''}`}>Only you know how to solder my heart</h1>
                     <div className={`heart${pulsing ? ' heart--pulsing' : ''}`}>
-                        {pulsing && <p className="heart__text">Love, Dan</p>}
+                        {pulsing && <p className="heart__text">Happy Valentine's Day<br />Love, Dan</p>}
                     </div>
                     <div ref={resistorHoleEl} className="resistor-hole">
                         {pulsing && (
