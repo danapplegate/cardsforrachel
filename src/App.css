@@ -85,6 +85,7 @@
 .heart--pulsing {
   background-color: red;
   animation: pulse 1s ease infinite;
+  filter: drop-shadow(-0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2));
 }
 
 .heart--pulsing:before,
@@ -145,6 +146,7 @@
   position: absolute;
   width: 100px;
   z-index: 5;
+  filter: drop-shadow(-0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2));
 }
 
 @keyframes pulse {
