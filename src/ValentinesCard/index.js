@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
+import './styles.css';
 import resistor from './resistor.png';
-import useMousePosition from './useMousePosition';
+import useMousePosition from '../util/useMousePosition';
 
 const Resistor = (props) => {
     return (

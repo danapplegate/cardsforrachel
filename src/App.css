@@ -1,171 +1,34 @@
 .app {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.app__background {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  background:
-    radial-gradient(circle closest-side at 60% 43%, rgb(255, 211, 223) 26%, rgba(187,0,51,0) 27%),
-    radial-gradient(circle closest-side at 40% 43%, rgb(255, 211, 223) 26%, rgba(187,0,51,0) 27%),
-    radial-gradient(circle closest-side at 40% 22%, rgb(248, 195, 206) 45%, rgba(221,51,85,0) 46%),
-    radial-gradient(circle closest-side at 60% 22%, rgb(248, 195, 206) 45%, rgba(221,51,85,0) 46%),
-    radial-gradient(circle closest-side at 50% 35%, rgb(248, 195, 206) 30%, rgba(221,51,85,0) 31%),
-
-    radial-gradient(circle closest-side at 60% 43%, rgb(255, 211, 223) 26%, rgba(187,0,51,0) 27%) 50px 50px,
-    radial-gradient(circle closest-side at 40% 43%, rgb(255, 211, 223) 26%, rgba(187,0,51,0) 27%) 50px 50px,
-    radial-gradient(circle closest-side at 40% 22%, rgb(248, 195, 206) 45%, rgba(221,51,85,0) 46%) 50px 50px,
-    radial-gradient(circle closest-side at 60% 22%, rgb(248, 195, 206) 45%, rgba(221,51,85,0) 46%) 50px 50px,
-    radial-gradient(circle closest-side at 50% 35%, rgb(248, 195, 206) 30%, rgba(221,51,85,0) 31%) 50px 50px;
-  background-color:rgb(255, 211, 223);
-  background-size:100px 100px;
-}
-
-.card {
-  background: white;
-  width: 25rem;
-  height: 35rem;
-  padding: 1.5rem;
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 1);
-}
-
-.card--valentines {
-  background: #333;
-  color: #444;
-  font-family: 'Pacifico', cursive;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-title {
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
-}
-
-.card-title--pulsing {
-  color: #ccc;
-}
-
-.heart {
-  background-color: #444;
-  height: 10rem;
-  width: 10rem;
-  margin: 0 10px;
-  top: 0;
-  transform: rotate(-45deg);
-}
-
-.heart:before,
-.heart:after {
-  content: "";
-  background-color: #444;
-  border-radius: 50%;
-  position: absolute;
-  height: 10rem;
-  width: 10rem;
-}
-
-.heart:before {
-  top: -5rem;
-  left: 0;
-}
-
-.heart:after {
-  top: 0;
-  left: 5rem;
-}
-
-.heart--pulsing {
-  background-color: red;
-  animation: pulse 1s ease infinite;
-  filter: drop-shadow(-0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2));
-}
-
-.heart--pulsing:before,
-.heart--pulsing:after {
-  background-color: red;
-}
-
-.heart__text {
-  position: absolute;
-  width: 15rem;
-  top: -5%;
-  left: -10%;
-  z-index: 1;
-  transform: rotate(45deg);
-  color: white;
-  font-size: 1.5rem;
-  text-shadow: rgba(0, 0, 0, 0.5) 0.1rem 0.1rem 5px;
-  animation: swell 1s ease-in infinite;
-}
-
-.resistor-hole {
-  margin-top: 4rem;
-  position: relative;
-  border: 0.2rem dashed #ccc;
-  width: 70px;
-  height: 30px;
-}
-
-.resistor-hole__label {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  margin: 0;
-  padding: 0 0.5rem;
-  position: absolute;
-  background-color: #333;
-  color: #ccc;
-  top: -0.5rem;
-}
-
-.resistor-hole__pad {
-  position: absolute;
-  border-radius: 50%;
-  background-color: black;
-  border: solid 3px #ccc;
-  width: 0.4rem;
-  height: 0.4rem;
-}
-
-.resistor-hole__clipper {
-  margin-left: 10px;
-  position: relative;
-  width: 50px;
-  height: 30px;
-  overflow-x: hidden;
-}
-
-.resistor {
-  position: absolute;
-  width: 100px;
-  z-index: 5;
-  filter: drop-shadow(-0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2));
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1) rotate(-45deg);
-    filter: drop-shadow(-0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2));
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  25% {
-    transform: scale(1.05) rotate(-43deg);
-    filter: drop-shadow(-0.4rem 0.4rem 0.3rem rgba(0, 0, 0, 0.2));
+  
+  .app__background {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background:
+      radial-gradient(circle closest-side at 60% 43%, rgb(255, 211, 223) 26%, rgba(187,0,51,0) 27%),
+      radial-gradient(circle closest-side at 40% 43%, rgb(255, 211, 223) 26%, rgba(187,0,51,0) 27%),
+      radial-gradient(circle closest-side at 40% 22%, rgb(248, 195, 206) 45%, rgba(221,51,85,0) 46%),
+      radial-gradient(circle closest-side at 60% 22%, rgb(248, 195, 206) 45%, rgba(221,51,85,0) 46%),
+      radial-gradient(circle closest-side at 50% 35%, rgb(248, 195, 206) 30%, rgba(221,51,85,0) 31%),
+  
+      radial-gradient(circle closest-side at 60% 43%, rgb(255, 211, 223) 26%, rgba(187,0,51,0) 27%) 50px 50px,
+      radial-gradient(circle closest-side at 40% 43%, rgb(255, 211, 223) 26%, rgba(187,0,51,0) 27%) 50px 50px,
+      radial-gradient(circle closest-side at 40% 22%, rgb(248, 195, 206) 45%, rgba(221,51,85,0) 46%) 50px 50px,
+      radial-gradient(circle closest-side at 60% 22%, rgb(248, 195, 206) 45%, rgba(221,51,85,0) 46%) 50px 50px,
+      radial-gradient(circle closest-side at 50% 35%, rgb(248, 195, 206) 30%, rgba(221,51,85,0) 31%) 50px 50px;
+    background-color:rgb(255, 211, 223);
+    background-size:100px 100px;
   }
-  50% {
-    transform: scale(1) rotate(-45deg);
-    filter: drop-shadow(-0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2));
+  
+  .card {
+    background: white;
+    width: 25rem;
+    height: 35rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 1);
   }
-}
-
-@keyframes swell {
-  0% { transform: scale(1) rotate(45deg); }
-  25% { transform: scale(1.05) rotate(45deg); }
-  55% { transform: scale(1) rotate(45deg); }
-}
