@@ -1,0 +1,25 @@
+.loading-text {
+    font-family: 'Luckiest Guy';
+    position: absolute;
+}
+
+#phaser-target {
+    box-shadow: -10px 10px 20px 5px rgba(0, 0, 0, 0.4), 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+    height: 600px;
+}
+
+.app__dino {
+    background: url('./assets/pattern.png'), lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-link {
+    color: lightslategray;
+    font-family: 'Pacifico';
+    margin-right: 20px;
+    align-self: flex-end;
+}
